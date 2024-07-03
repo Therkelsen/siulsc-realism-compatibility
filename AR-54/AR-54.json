@@ -42,7 +42,8 @@
     "BaseChamberCheckSpeed": 0.9,
     "BaseFixSpeed": 0.85,
     "OffsetRotation": 0.01,
-    "RecoilIntensity": 0.23
+    "RecoilIntensity": 0.23,
+    "MasteryCategory": "M4"
     },
     "MAG_AR-54_SIUL": {
     "ItemID": "MAG_AR-54_SIUL",
