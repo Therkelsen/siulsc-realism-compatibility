@@ -12,19 +12,28 @@ if (-Not (Test-Path -Path $releaseDir)) {
 }
 
 # Create directory names within the release directory
-$baseDir = "$releaseDir\ar54-realism-compatibility_v${mod_version}_SPT-v${spt_version}"
+$baseDir = "$releaseDir\siulsc-realism-compatibility${mod_version}_SPT-v${spt_version}"
 
 # Define the inner directory structure
-$innerDir = "user\mods\SPT-Realism\db\put_new_stuff_here\AR-54"
+$innerDir = "user\mods\SPT-Realism\db\put_new_stuff_here\SiulSC Weapons"
 
 # Create the directories
 New-Item -ItemType Directory -Path "$baseDir\$innerDir" -Force
 
-# Move compat file
-Copy-Item -Path 'AR-54\AR-54.json' -Destination "$baseDir\$innerDir"
+# Define the list of files to move
+$filesToMove = @(
+    'SiulSC Weapons\AR-54.json',
+    'SiulSC Weapons\DVL-50.json',
+    'SiulSC Weapons\MK-12.json'
+)
+
+# Move files to both directories
+foreach ($file in $filesToMove) {
+    Copy-Item -Path $file -Destination "$baseDir\$innerDir"
+}
 
 # Create zip files
-Compress-Archive -Path "$baseDir\*" -DestinationPath "$releaseDir\ar54-realism-compatibility_v${mod_version}_SPT-v${spt_version}.zip" -Force
+Compress-Archive -Path "$baseDir\*" -DestinationPath "$releaseDir\siulsc-realism-compatibility${mod_version}_SPT-v${spt_version}.zip" -Force
 
 # Clean up the created directories
 Remove-Item -Recurse -Force "$baseDir"
