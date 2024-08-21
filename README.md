@@ -11,13 +11,13 @@ If you experience any issues, feel free to open an issue. If fixing it yourself 
 2. **Clone Your Fork**
    - Open your terminal and run the following command to clone your forked repository to your local machine:
      ```sh
-     git clone https://github.com/Therkelsen/ar54-realism-compatibility.git
+     git clone https://github.com/Therkelsen/siulsc-realism-compatibility.git
      ```
 
 3. **Create a New Branch**
    - Navigate to the repository directory:
      ```sh
-     cd ar54-realism-compatibility
+     cd siulsc-realism-compatibility
      ```
    - Create a new branch for your changes:
      ```sh
