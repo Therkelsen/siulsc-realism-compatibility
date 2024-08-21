@@ -43,6 +43,7 @@
         "BaseChamberCheckSpeed": 0.9,
         "BaseFixSpeed": 0.8,
         "OffsetRotation": 0.009,
-        "RecoilIntensity": 0.17
+        "RecoilIntensity": 0.17,
+        "MasteryCategory": "M4"
     }
 }
