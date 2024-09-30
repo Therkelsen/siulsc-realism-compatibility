@@ -15,7 +15,7 @@
     "VisualMulti": 1.2,
     "Convergence": 13.5,
     "RecoilAngle": 90,
-    "BaseMalfunctionChance": 0.01,
+    "BaseMalfunctionChance": 0.001,
     "HeatFactorGun": 0.45,
     "HeatFactorByShot": 1,
     "CoolFactorGun": 0.1,
